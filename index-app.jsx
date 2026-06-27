@@ -1,3 +1,4 @@
+import { useState, useEffect, useRef } from "react";
 
 const NAVY="#04102B",NAVY2="#0B1E3D",TEAL="#00D9B4",SKY="#4B7FFF",
       BG="#F4F7FC",WHITE="#FFFFFF",TEXT="#0F1D38",MUTED="#64748B",
@@ -690,5 +691,3 @@ export default function IndexApp(){
     </>
   );
 }
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<index />);
