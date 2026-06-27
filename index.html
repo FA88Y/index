@@ -5,10 +5,10 @@ const NAVY="#04102B",NAVY2="#0B1E3D",TEAL="#00D9B4",SKY="#4B7FFF",
       BORD="#E2E8F0",TEAL_BG="rgba(0,217,180,0.1)",TEAL_BD="rgba(0,217,180,0.22)";
 
 const ROLES=[
-  {id:"student",label:"Student",icon:"🎓",desc:"Gain real experience on industry and research challenges"},
-  {id:"researcher",label:"Researcher",icon:"🔬",desc:"Find partners to amplify your research impact"},
-  {id:"industry",label:"Industry",icon:"🏭",desc:"Post real challenges, access top-tier talent"},
-  {id:"university",label:"University",icon:"🏛️",desc:"Bridge your campus to the innovation ecosystem"},
+  {id:"student",label:"Student",icon:"ðŸŽ“",desc:"Gain real experience on industry and research challenges"},
+  {id:"researcher",label:"Researcher",icon:"ðŸ”¬",desc:"Find partners to amplify your research impact"},
+  {id:"industry",label:"Industry",icon:"ðŸ ­",desc:"Post real challenges, access top-tier talent"},
+  {id:"university",label:"University",icon:"ðŸ ›ï¸ ",desc:"Bridge your campus to the innovation ecosystem"},
 ];
 
 const SKILLS_DB=["Machine Learning","Python","Data Analysis","React","IoT","Chemistry","Electrical Engineering","UI/UX Design","Arabic NLP","Computer Vision","Robotics","Cybersecurity","Bioinformatics","Materials Science","Urban Planning","Psychology"];
@@ -20,51 +20,51 @@ const IDEAS=[
    desc:"ML models to optimize irrigation and cut water waste by 40% using real-time sensor data and predictive analytics.",
    problem:"UAE agriculture wastes over 70% of irrigation water due to inefficient scheduling. Climate change is accelerating desertification, threatening food security. Existing solutions are too costly for small farms.",
    skills:["Machine Learning","Python","IoT","Data Analysis"],
-   courses:["Machine Learning Specialization – Coursera","IoT Fundamentals – Cisco Academy","Data Analysis with Python – edX"],
+   courses:["Machine Learning Specialization â€“ Coursera","IoT Fundamentals â€“ Cisco Academy","Data Analysis with Python â€“ edX"],
    author:"Dr. Khalid Al-Mansoori",role:"Researcher",org:"UAE University",team:3,maxTeam:6,papers:2,posted:"2 days ago",status:"Open",match:87},
   {id:2,type:"Research",cat:"Linguistics & AI",title:"Open-Source Arabic NLP Benchmark Dataset",
    desc:"The first comprehensive Arabic NLP benchmark covering dialects from 22 countries for open model training and evaluation.",
-   problem:"Arabic NLP lags behind English by ~8 years due to a lack of standardized, public training datasets — limiting AI for 400M+ Arabic speakers.",
+   problem:"Arabic NLP lags behind English by ~8 years due to a lack of standardized, public training datasets â€” limiting AI for 400M+ Arabic speakers.",
    skills:["Arabic NLP","Python","Data Analysis","Linguistics"],
-   courses:["NLP Specialization – Stanford Online","Arabic Digital Humanities – FutureLearn"],
+   courses:["NLP Specialization â€“ Stanford Online","Arabic Digital Humanities â€“ FutureLearn"],
    author:"Dr. Layla Hassan",role:"Researcher",org:"Khalifa University",team:2,maxTeam:5,papers:4,posted:"5 days ago",status:"Open",match:73},
   {id:3,type:"Industry",cat:"Smart Cities",title:"Predictive Traffic Optimization for Dubai Roads",
    desc:"Computer vision and reinforcement learning to cut commute times by 25% through adaptive signal control across major intersections.",
    problem:"Dubai loses AED 4.2B annually to congestion. Current signal systems are static and cannot respond to real-time traffic or incidents.",
    skills:["Computer Vision","Reinforcement Learning","Python","Urban Planning"],
-   courses:["Deep Learning Specialization – Coursera","Smart Cities – MIT OCW"],
+   courses:["Deep Learning Specialization â€“ Coursera","Smart Cities â€“ MIT OCW"],
    author:"Roads & Transport Authority",role:"Industry",org:"RTA Dubai",team:4,maxTeam:8,papers:1,posted:"1 week ago",status:"Open",match:65},
   {id:4,type:"Academia",cat:"Mental Health",title:"Student Mental Health Early-Warning Platform",
    desc:"Anonymous behavioral analytics detecting early signs of mental health deterioration in university students via app usage patterns.",
    problem:"1 in 4 UAE students reports anxiety or depression, yet 68% never seek help due to stigma. Early intervention is critical but currently absent.",
    skills:["UI/UX Design","React","Psychology","Data Analysis"],
-   courses:["Mental Health in the Workplace – FutureLearn","UX Research – Google Certificate"],
+   courses:["Mental Health in the Workplace â€“ FutureLearn","UX Research â€“ Google Certificate"],
    author:"Prof. Sarah Malik",role:"Researcher",org:"American University of Sharjah",team:2,maxTeam:5,papers:3,posted:"3 days ago",status:"Open",match:91},
   {id:5,type:"Industry",cat:"Energy",title:"Smart Grid Integration for Residential Solar in Abu Dhabi",
    desc:"Bidirectional smart grid system enabling residential solar owners to sell excess power back to the grid efficiently.",
    problem:"Abu Dhabi has ambitious solar targets but no micro-grid infrastructure. 34% of potential solar capacity sits unused due to grid barriers.",
    skills:["Electrical Engineering","IoT","Python","Data Analysis"],
-   courses:["Solar Energy – TU Delft via edX","Power Systems – IEEE Learning Network"],
+   courses:["Solar Energy â€“ TU Delft via edX","Power Systems â€“ IEEE Learning Network"],
    author:"ADNOC Clean Energy",role:"Industry",org:"ADNOC",team:3,maxTeam:7,papers:0,posted:"4 days ago",status:"Open",match:60},
   {id:6,type:"Research",cat:"Materials Science",title:"Bio-Inspired Carbon Capture from UAE Marine Life",
-   desc:"Porous carbon materials inspired by UAE coral reef structures for efficient industrial CO₂ capture at scale.",
+   desc:"Porous carbon materials inspired by UAE coral reef structures for efficient industrial COâ‚‚ capture at scale.",
    problem:"Current carbon capture is expensive and energy-intensive. UAE needs cost-effective solutions aligned with its Net Zero 2050 strategy.",
    skills:["Materials Science","Chemistry","Bioinformatics"],
-   courses:["Materials Science – MIT OCW","Green Chemistry – ACS Courses"],
+   courses:["Materials Science â€“ MIT OCW","Green Chemistry â€“ ACS Courses"],
    author:"Dr. Omar Khalifa",role:"Researcher",org:"KAUST",team:1,maxTeam:4,papers:5,posted:"1 week ago",status:"Open",match:45},
 ];
 
 const COURSE_MAP={
-  "Machine Learning":"Machine Learning Specialization – Coursera",
-  "Python":"Python for Everybody – Coursera",
-  "IoT":"IoT Fundamentals – Cisco Academy",
+  "Machine Learning":"Machine Learning Specialization â€“ Coursera",
+  "Python":"Python for Everybody â€“ Coursera",
+  "IoT":"IoT Fundamentals â€“ Cisco Academy",
   "Data Analysis":"Google Data Analytics Certificate",
-  "React":"Full Stack Open – University of Helsinki",
+  "React":"Full Stack Open â€“ University of Helsinki",
   "UI/UX Design":"Google UX Design Certificate",
-  "Computer Vision":"Computer Vision Specialization – Coursera",
-  "Arabic NLP":"NLP with Python – edX",
-  "Electrical Engineering":"Power Electronics – NPTEL",
-  "Materials Science":"Materials Science – MIT OCW",
+  "Computer Vision":"Computer Vision Specialization â€“ Coursera",
+  "Arabic NLP":"NLP with Python â€“ edX",
+  "Electrical Engineering":"Power Electronics â€“ NPTEL",
+  "Materials Science":"Materials Science â€“ MIT OCW",
 };
 
 function IdeaCard({idea,onOpen}){
@@ -88,8 +88,8 @@ function IdeaCard({idea,onOpen}){
         {idea.skills.length>3&&<span style={{fontSize:11,color:MUTED,padding:"3px 0"}}>+{idea.skills.length-3}</span>}
       </div>
       <div style={{borderTop:`1px solid ${BORD}`,paddingTop:10,display:"flex",justifyContent:"space-between",alignItems:"center"}}>
-        <span style={{fontSize:11,color:MUTED}}>{idea.team}/{idea.maxTeam} members · {idea.posted}</span>
-        <span style={{fontSize:12,color:TEAL,fontWeight:600}}>View →</span>
+        <span style={{fontSize:11,color:MUTED}}>{idea.team}/{idea.maxTeam} members Â· {idea.posted}</span>
+        <span style={{fontSize:12,color:TEAL,fontWeight:600}}>View â†’</span>
       </div>
     </div>
   );
@@ -173,7 +173,7 @@ export default function IndexApp(){
   const GBtn={padding:"11px 20px",background:WHITE,border:`1.5px solid ${BORD}`,borderRadius:12,color:MUTED,fontFamily:"DM Sans,sans-serif",fontSize:14,cursor:"pointer"};
 
   function Sidebar(){
-    const NAV=[{id:"dashboard",icon:"⊞",label:"Dashboard"},{id:"browse",icon:"🔍",label:"Browse Challenges"},{id:"submit",icon:"✦",label:"Submit Idea"},{id:"junior",icon:"🎒",label:"INDEX Junior"}];
+    const NAV=[{id:"dashboard",icon:"âŠž",label:"Dashboard"},{id:"browse",icon:"ðŸ” ",label:"Browse Challenges"},{id:"submit",icon:"âœ¦",label:"Submit Idea"},{id:"junior",icon:"ðŸŽ’",label:"INDEX Junior"}];
     return(
       <aside style={{width:228,background:NAVY2,flexShrink:0,display:"flex",flexDirection:"column",minHeight:"100vh",position:"sticky",top:0,zIndex:10}}>
         <div style={{padding:"22px 18px 18px",borderBottom:"1px solid rgba(255,255,255,.07)"}}>
@@ -216,13 +216,13 @@ export default function IndexApp(){
           <canvas ref={cvs} style={{position:"absolute",inset:0,width:"100%",height:"100%",opacity:.65}}/>
           <div style={{position:"relative",zIndex:2,padding:"0 60px",maxWidth:680,marginTop:80}}>
             <div style={{display:"flex",alignItems:"center",gap:10,fontSize:11,fontWeight:700,letterSpacing:".14em",textTransform:"uppercase",color:TEAL,marginBottom:24}}>
-              <div style={{width:26,height:1.5,background:TEAL}}/>Industry · Academia · Research · Innovation
+              <div style={{width:26,height:1.5,background:TEAL}}/>Industry Â· Academia Â· Research Â· Innovation
             </div>
             <h1 style={{fontFamily:"Syne,sans-serif",fontSize:"clamp(46px,6.5vw,80px)",fontWeight:800,lineHeight:1.04,letterSpacing:"-2.5px",color:WHITE,marginBottom:24}}>
               Where<br/>Problems<br/><span style={{color:TEAL}}>Meet Solutions.</span>
             </h1>
             <p style={{fontSize:18,fontWeight:300,color:"rgba(255,255,255,.55)",maxWidth:500,lineHeight:1.75,marginBottom:42}}>
-              INDEX connects companies, universities, researchers, and students — turning UAE's real-world challenges into collaborative breakthroughs.
+              INDEX connects companies, universities, researchers, and students â€” turning UAE's real-world challenges into collaborative breakthroughs.
             </p>
             <div style={{display:"flex",gap:14}}>
               <button onClick={()=>setAuth("signup")} style={{padding:"14px 32px",background:TEAL,border:"none",borderRadius:999,color:NAVY,fontSize:16,fontWeight:700,cursor:"pointer",fontFamily:"DM Sans,sans-serif"}}>Join the Ecosystem</button>
@@ -244,7 +244,7 @@ export default function IndexApp(){
             <h2 style={{fontFamily:"Syne,sans-serif",fontSize:"clamp(28px,4vw,44px)",fontWeight:800,letterSpacing:"-1px",color:TEXT}}>Everything to Collaborate,<br/>All in One Place</h2>
           </div>
           <div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:18,maxWidth:1080,margin:"0 auto"}}>
-            {[["🧠","AI Skill Matching","Matched to projects based on your skills and interests automatically"],["⚡","Industry Challenges","Real problems posted by UAE companies ready for collaborative solutions"],["🔗","Research Hub","Connect research to industry partners, students, and funding"],["📚","Learning Paths","Personalized course recommendations to close skill gaps"],["🌐","Knowledge Network","Every challenge linked to research papers and case studies"],["🚀","Team Workspace","Share, discuss, and track project milestones together"]].map(([icon,title,desc])=>(
+            {[["ðŸ§ ","AI Skill Matching","Matched to projects based on your skills and interests automatically"],["âš¡","Industry Challenges","Real problems posted by UAE companies ready for collaborative solutions"],["ðŸ”—","Research Hub","Connect research to industry partners, students, and funding"],["ðŸ“š","Learning Paths","Personalized course recommendations to close skill gaps"],["ðŸŒ ","Knowledge Network","Every challenge linked to research papers and case studies"],["ðŸš€","Team Workspace","Share, discuss, and track project milestones together"]].map(([icon,title,desc])=>(
               <div key={title} style={{background:WHITE,border:`1.5px solid ${BORD}`,borderRadius:18,padding:"28px 26px"}}>
                 <div style={{fontSize:28,marginBottom:14}}>{icon}</div>
                 <div style={{fontFamily:"Syne,sans-serif",fontSize:15,fontWeight:700,color:TEXT,marginBottom:8}}>{title}</div>
@@ -258,7 +258,7 @@ export default function IndexApp(){
           <div style={{position:"relative",zIndex:1}}>
             <div style={{fontSize:11,fontWeight:700,letterSpacing:".15em",textTransform:"uppercase",color:TEAL,marginBottom:16}}>Get Started</div>
             <h2 style={{fontFamily:"Syne,sans-serif",fontSize:"clamp(30px,5vw,60px)",fontWeight:800,color:WHITE,letterSpacing:"-2px",lineHeight:1.05,marginBottom:18}}>Ready to Join<br/>the Ecosystem?</h2>
-            <p style={{fontSize:16,color:"rgba(255,255,255,.5)",marginBottom:40,maxWidth:440,margin:"0 auto 40px"}}>Student, researcher, company, or university — INDEX has a place for you.</p>
+            <p style={{fontSize:16,color:"rgba(255,255,255,.5)",marginBottom:40,maxWidth:440,margin:"0 auto 40px"}}>Student, researcher, company, or university â€” INDEX has a place for you.</p>
             <div style={{display:"flex",gap:14,justifyContent:"center"}}>
               <button onClick={()=>setAuth("signup")} style={{padding:"14px 32px",background:TEAL,border:"none",borderRadius:999,color:NAVY,fontSize:16,fontWeight:700,cursor:"pointer",fontFamily:"DM Sans,sans-serif"}}>Create Your Profile</button>
               <button onClick={()=>setAuth("signup")} style={{padding:"13px 32px",background:"transparent",border:"1.5px solid rgba(255,255,255,.3)",borderRadius:999,color:WHITE,fontSize:16,cursor:"pointer",fontFamily:"DM Sans,sans-serif"}}>Post a Challenge</button>
@@ -267,7 +267,7 @@ export default function IndexApp(){
         </div>
         <div style={{background:"#020B1C",padding:"28px 60px",display:"flex",justifyContent:"space-between",alignItems:"center"}}>
           <div style={{fontFamily:"Syne,sans-serif",fontWeight:800,fontSize:18,color:WHITE}}>INDEX<span style={{color:TEAL}}>.</span></div>
-          <div style={{fontSize:12,color:"rgba(255,255,255,.25)"}}>© 2025 INDEX · Where Problems Meet Solutions</div>
+          <div style={{fontSize:12,color:"rgba(255,255,255,.25)"}}>Â© 2025 INDEX Â· Where Problems Meet Solutions</div>
         </div>
       </div>
     );
@@ -285,8 +285,8 @@ export default function IndexApp(){
               <label style={lbl}>Email</label>
               <input style={{...inp,marginBottom:14}} placeholder="you@email.com" type="email" onChange={e=>setAData(d=>({...d,email:e.target.value}))}/>
               <label style={lbl}>Password</label>
-              <input style={{...inp,marginBottom:24}} placeholder="••••••••" type="password"/>
-              <button onClick={login} style={PBtn}>Sign In →</button>
+              <input style={{...inp,marginBottom:24}} placeholder="â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢" type="password"/>
+              <button onClick={login} style={PBtn}>Sign In â†’</button>
               <div style={{textAlign:"center",marginTop:18,fontSize:14,color:MUTED}}>
                 No account?{" "}<span style={{color:TEAL,cursor:"pointer",fontWeight:600}} onClick={()=>{setAuth("signup");setAStep(1);}}>Join INDEX</span>
               </div>
@@ -307,7 +307,7 @@ export default function IndexApp(){
                       </div>
                     ))}
                   </div>
-                  <button onClick={()=>aData.role&&setAStep(2)} style={{...PBtn,marginTop:20,opacity:aData.role?1:.45}}>Continue →</button>
+                  <button onClick={()=>aData.role&&setAStep(2)} style={{...PBtn,marginTop:20,opacity:aData.role?1:.45}}>Continue â†’</button>
                   <div style={{textAlign:"center",marginTop:16,fontSize:14,color:MUTED}}>
                     Have an account?{" "}<span style={{color:TEAL,cursor:"pointer",fontWeight:600}} onClick={()=>setAuth("login")}>Sign In</span>
                   </div>
@@ -324,8 +324,8 @@ export default function IndexApp(){
                   <label style={lbl}>{aData.role==="Industry"?"Company Name":"University / Institution"}</label>
                   <input style={{...inp,marginBottom:24}} placeholder={aData.role==="Industry"?"Your company":"e.g. UAE University, Khalifa University"} value={aData.org} onChange={e=>setAData(d=>({...d,org:e.target.value}))}/>
                   <div style={{display:"flex",gap:10}}>
-                    <button onClick={()=>setAStep(1)} style={GBtn}>← Back</button>
-                    <button onClick={()=>setAStep(3)} style={{...PBtn,flex:1}}>Continue →</button>
+                    <button onClick={()=>setAStep(1)} style={GBtn}>â†  Back</button>
+                    <button onClick={()=>setAStep(3)} style={{...PBtn,flex:1}}>Continue â†’</button>
                   </div>
                 </div>
               )}
@@ -345,8 +345,8 @@ export default function IndexApp(){
                     })}
                   </div>
                   <div style={{display:"flex",gap:10}}>
-                    <button onClick={()=>setAStep(2)} style={GBtn}>← Back</button>
-                    <button onClick={login} style={{...PBtn,flex:1}}>🎉 Create Account</button>
+                    <button onClick={()=>setAStep(2)} style={GBtn}>â†  Back</button>
+                    <button onClick={login} style={{...PBtn,flex:1}}>ðŸŽ‰ Create Account</button>
                   </div>
                 </div>
               )}
@@ -364,11 +364,11 @@ export default function IndexApp(){
         <Sidebar/>
         <main style={{flex:1,padding:"36px 40px",background:BG,overflowY:"auto"}}>
           <div style={{marginBottom:30}}>
-            <h1 style={{fontFamily:"Syne,sans-serif",fontSize:24,fontWeight:800,color:TEXT}}>Good morning, {user?.name?.split(" ")[0]||"Safwan"}! 👋</h1>
+            <h1 style={{fontFamily:"Syne,sans-serif",fontSize:24,fontWeight:800,color:TEXT}}>Good morning, {user?.name?.split(" ")[0]||"Safwan"}! ðŸ‘‹</h1>
             <p style={{fontSize:14,color:MUTED,marginTop:4}}>Here are challenges matching your profile</p>
           </div>
           <div style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:14,marginBottom:32}}>
-            {[["12","Skill Matches","🎯",TEAL],["2","Active Projects","⚡",SKY],["74%","Profile Score","📈","#FF6B4A"],["8","Connections","🔗","#A855F7"]].map(([v,l,icon,col])=>(
+            {[["12","Skill Matches","ðŸŽ¯",TEAL],["2","Active Projects","âš¡",SKY],["74%","Profile Score","ðŸ“ˆ","#FF6B4A"],["8","Connections","ðŸ”—","#A855F7"]].map(([v,l,icon,col])=>(
               <div key={l} style={{background:WHITE,border:`1.5px solid ${BORD}`,borderRadius:16,padding:"18px 20px"}}>
                 <div style={{fontSize:22,marginBottom:8}}>{icon}</div>
                 <div style={{fontFamily:"Syne,sans-serif",fontSize:28,fontWeight:800,color:col}}>{v}</div>
@@ -378,7 +378,7 @@ export default function IndexApp(){
           </div>
           <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:16}}>
             <div style={{fontFamily:"Syne,sans-serif",fontSize:17,fontWeight:700,color:TEXT}}>Recommended for You</div>
-            <button onClick={()=>setView("browse")} style={{fontSize:13,color:TEAL,background:"none",border:"none",cursor:"pointer",fontWeight:600,padding:0,fontFamily:"DM Sans,sans-serif"}}>View All →</button>
+            <button onClick={()=>setView("browse")} style={{fontSize:13,color:TEAL,background:"none",border:"none",cursor:"pointer",fontWeight:600,padding:0,fontFamily:"DM Sans,sans-serif"}}>View All â†’</button>
           </div>
           <div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:14,marginBottom:30}}>
             {top3.map(idea=><IdeaCard key={idea.id} idea={idea} onOpen={openIdea}/>)}
@@ -410,7 +410,7 @@ export default function IndexApp(){
         <Sidebar/>
         <main style={{flex:1,padding:"36px 40px",background:BG}}>
           <h1 style={{fontFamily:"Syne,sans-serif",fontSize:24,fontWeight:800,color:TEXT,marginBottom:4}}>Browse Challenges</h1>
-          <p style={{fontSize:14,color:MUTED,marginBottom:26}}>{filtered.length} open challenges · Find your next collaboration</p>
+          <p style={{fontSize:14,color:MUTED,marginBottom:26}}>{filtered.length} open challenges Â· Find your next collaboration</p>
           <div style={{display:"flex",gap:12,marginBottom:26}}>
             <input value={srch} onChange={e=>setSrch(e.target.value)} placeholder="Search by title, skill, or keyword..."
               style={{...inp,flex:1,borderRadius:12}}/>
@@ -428,7 +428,7 @@ export default function IndexApp(){
           </div>
           {!filtered.length&&(
             <div style={{textAlign:"center",padding:"60px 0",color:MUTED}}>
-              <div style={{fontSize:40,marginBottom:12}}>🔍</div>
+              <div style={{fontSize:40,marginBottom:12}}>ðŸ” </div>
               <div style={{fontFamily:"Syne,sans-serif",fontSize:18,fontWeight:700,color:TEXT,marginBottom:8}}>No challenges found</div>
               <div style={{fontSize:14}}>Try a different search or filter</div>
             </div>
@@ -446,7 +446,7 @@ export default function IndexApp(){
         <Sidebar/>
         <div style={{flex:1,display:"flex",alignItems:"center",justifyContent:"center",background:BG}}>
           <div style={{textAlign:"center",maxWidth:420,padding:40}}>
-            <div style={{width:80,height:80,borderRadius:"50%",background:TEAL_BG,border:`2px solid ${TEAL}`,display:"flex",alignItems:"center",justifyContent:"center",fontSize:36,margin:"0 auto 24px"}}>🎉</div>
+            <div style={{width:80,height:80,borderRadius:"50%",background:TEAL_BG,border:`2px solid ${TEAL}`,display:"flex",alignItems:"center",justifyContent:"center",fontSize:36,margin:"0 auto 24px"}}>ðŸŽ‰</div>
             <div style={{fontFamily:"Syne,sans-serif",fontSize:28,fontWeight:800,color:TEXT,marginBottom:12}}>Idea Submitted!</div>
             <div style={{fontSize:15,color:MUTED,lineHeight:1.7,marginBottom:32}}>Your challenge is live on INDEX. Our AI is already finding the best collaborators for your project.</div>
             <button onClick={()=>{setView("browse");resetSubmit();}} style={PBtn}>Browse All Challenges</button>
@@ -470,7 +470,7 @@ export default function IndexApp(){
                 return(
                   <div key={s} style={{flex:1,display:"flex",flexDirection:"column",alignItems:"center",position:"relative",zIndex:1}}>
                     <div style={{width:30,height:30,borderRadius:"50%",background:done?TEAL:active?NAVY:WHITE,border:`2px solid ${done||active?TEAL:BORD}`,display:"flex",alignItems:"center",justifyContent:"center",fontSize:12,fontWeight:700,color:done?NAVY:active?WHITE:MUTED}}>
-                      {done?"✓":i+1}
+                      {done?"âœ“":i+1}
                     </div>
                     <div style={{fontSize:11,color:active?TEAL:MUTED,marginTop:6,fontWeight:active?600:400,textAlign:"center",whiteSpace:"nowrap"}}>{s}</div>
                   </div>
@@ -519,14 +519,14 @@ export default function IndexApp(){
                     <div style={{display:"flex",flexWrap:"wrap",gap:7,marginBottom:18}}>
                       {form.skills.map(s=>(
                         <span key={s} style={{display:"inline-flex",alignItems:"center",gap:6,padding:"5px 12px",borderRadius:999,background:TEAL_BG,border:`1.5px solid ${TEAL}`,color:TEAL,fontSize:13,fontWeight:600}}>
-                          {s}<span onClick={()=>setForm(f=>({...f,skills:f.skills.filter(x=>x!==s)}))} style={{cursor:"pointer",fontWeight:700,lineHeight:1}}>×</span>
+                          {s}<span onClick={()=>setForm(f=>({...f,skills:f.skills.filter(x=>x!==s)}))} style={{cursor:"pointer",fontWeight:700,lineHeight:1}}>Ã—</span>
                         </span>
                       ))}
                     </div>
                   )}
                   {recs.length>0&&(
                     <div style={{background:BG,border:`1.5px solid ${BORD}`,borderRadius:14,padding:"14px 18px",marginBottom:18}}>
-                      <div style={{fontSize:11,fontWeight:700,color:TEAL,marginBottom:10,letterSpacing:".1em",textTransform:"uppercase"}}>✦ AI Course Recommendations</div>
+                      <div style={{fontSize:11,fontWeight:700,color:TEAL,marginBottom:10,letterSpacing:".1em",textTransform:"uppercase"}}>âœ¦ AI Course Recommendations</div>
                       {recs.map(c=>(
                         <div key={c} style={{display:"flex",alignItems:"center",gap:8,fontSize:13,color:TEXT,marginBottom:6}}>
                           <div style={{width:6,height:6,borderRadius:"50%",background:TEAL,flexShrink:0}}/>{c}
@@ -564,10 +564,10 @@ export default function IndexApp(){
                 </div>
               )}
               <div style={{display:"flex",gap:12,marginTop:30,paddingTop:22,borderTop:`1px solid ${BORD}`}}>
-                {sStep>1&&<button onClick={()=>setSStep(s=>s-1)} style={GBtn}>← Back</button>}
+                {sStep>1&&<button onClick={()=>setSStep(s=>s-1)} style={GBtn}>â†  Back</button>}
                 {sStep<4
-                  ?<button onClick={()=>setSStep(s=>s+1)} style={{...PBtn,flex:1}}>Continue →</button>
-                  :<button onClick={()=>setSDone(true)} style={{...PBtn,flex:1}}>🚀 Submit to INDEX</button>}
+                  ?<button onClick={()=>setSStep(s=>s+1)} style={{...PBtn,flex:1}}>Continue â†’</button>
+                  :<button onClick={()=>setSDone(true)} style={{...PBtn,flex:1}}>ðŸš€ Submit to INDEX</button>}
               </div>
             </div>
           </div>
@@ -583,7 +583,7 @@ export default function IndexApp(){
       <div style={{display:"flex",minHeight:"100vh"}}>
         <Sidebar/>
         <main style={{flex:1,padding:"36px 44px",background:BG,overflowY:"auto"}}>
-          <button onClick={()=>setView("browse")} style={{background:"none",border:"none",cursor:"pointer",color:MUTED,fontSize:13,display:"flex",alignItems:"center",gap:6,marginBottom:22,padding:0,fontFamily:"DM Sans,sans-serif"}}>← Back to Browse</button>
+          <button onClick={()=>setView("browse")} style={{background:"none",border:"none",cursor:"pointer",color:MUTED,fontSize:13,display:"flex",alignItems:"center",gap:6,marginBottom:22,padding:0,fontFamily:"DM Sans,sans-serif"}}>â†  Back to Browse</button>
           <div style={{background:WHITE,border:`1.5px solid ${BORD}`,borderRadius:20,padding:"32px 36px",marginBottom:16}}>
             <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-start",marginBottom:16}}>
               <span style={{padding:"5px 14px",borderRadius:999,background:`${tc}18`,color:tc,fontSize:12,fontWeight:700}}>{sel.type}</span>
@@ -592,9 +592,9 @@ export default function IndexApp(){
             <h1 style={{fontFamily:"Syne,sans-serif",fontSize:24,fontWeight:800,color:TEXT,marginBottom:12,lineHeight:1.2}}>{sel.title}</h1>
             <p style={{fontSize:15,color:MUTED,lineHeight:1.75,marginBottom:20}}>{sel.desc}</p>
             <div style={{display:"flex",gap:28,fontSize:13,color:MUTED,flexWrap:"wrap"}}>
-              <span>👤 <strong style={{color:TEXT}}>{sel.author}</strong> · {sel.org}</span>
-              <span>⏰ {sel.posted}</span>
-              <span>👥 {sel.team}/{sel.maxTeam} members</span>
+              <span>ðŸ‘¤ <strong style={{color:TEXT}}>{sel.author}</strong> Â· {sel.org}</span>
+              <span>â ° {sel.posted}</span>
+              <span>ðŸ‘¥ {sel.team}/{sel.maxTeam} members</span>
             </div>
           </div>
           <div style={{display:"grid",gridTemplateColumns:"1fr 290px",gap:16}}>
@@ -612,7 +612,7 @@ export default function IndexApp(){
                 </div>
                 {sel.courses.length>0&&(
                   <div style={{borderTop:`1px solid ${BORD}`,paddingTop:14}}>
-                    <div style={{fontSize:11,fontWeight:700,color:TEAL,marginBottom:10,letterSpacing:".1em",textTransform:"uppercase"}}>✦ Suggested Courses for Acquiring Skills</div>
+                    <div style={{fontSize:11,fontWeight:700,color:TEAL,marginBottom:10,letterSpacing:".1em",textTransform:"uppercase"}}>âœ¦ Suggested Courses for Acquiring Skills</div>
                     {sel.courses.map(c=>(
                       <div key={c} style={{display:"flex",alignItems:"center",gap:8,fontSize:13,color:MUTED,marginBottom:8}}>
                         <div style={{width:6,height:6,borderRadius:"50%",background:TEAL,flexShrink:0}}/>{c}
@@ -627,15 +627,15 @@ export default function IndexApp(){
               <div style={{background:WHITE,border:`1.5px solid ${BORD}`,borderRadius:16,padding:"18px 20px"}}>
                 <div style={{fontSize:11,fontWeight:700,color:MUTED,textTransform:"uppercase",letterSpacing:".1em",marginBottom:12}}>Posted By</div>
                 <div style={{display:"flex",alignItems:"center",gap:10}}>
-                  <div style={{width:36,height:36,borderRadius:"50%",background:TEAL_BG,border:`1.5px solid ${TEAL}`,display:"flex",alignItems:"center",justifyContent:"center",fontSize:16}}>👤</div>
+                  <div style={{width:36,height:36,borderRadius:"50%",background:TEAL_BG,border:`1.5px solid ${TEAL}`,display:"flex",alignItems:"center",justifyContent:"center",fontSize:16}}>ðŸ‘¤</div>
                   <div>
                     <div style={{fontWeight:700,fontSize:13,color:TEXT}}>{sel.author}</div>
-                    <div style={{fontSize:12,color:MUTED}}>{sel.role} · {sel.org}</div>
+                    <div style={{fontSize:12,color:MUTED}}>{sel.role} Â· {sel.org}</div>
                   </div>
                 </div>
               </div>
               <div style={{background:WHITE,border:`1.5px solid ${BORD}`,borderRadius:16,padding:"18px 20px"}}>
-                {[["👥","Team",`${sel.team} of ${sel.maxTeam} filled`],["📄","Papers",`${sel.papers} linked`],["⏰","Posted",sel.posted],["✅","Status",sel.status]].map(([icon,label,val])=>(
+                {[["ðŸ‘¥","Team",`${sel.team} of ${sel.maxTeam} filled`],["ðŸ“„","Papers",`${sel.papers} linked`],["â °","Posted",sel.posted],["âœ…","Status",sel.status]].map(([icon,label,val])=>(
                   <div key={label} style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:12}}>
                     <span style={{fontSize:13,color:MUTED}}>{icon} {label}</span>
                     <span style={{fontSize:13,fontWeight:600,color:TEXT}}>{val}</span>
@@ -656,8 +656,8 @@ export default function IndexApp(){
         <Sidebar/>
         <main style={{flex:1,display:"flex",alignItems:"center",justifyContent:"center",background:BG,padding:"60px 80px"}}>
           <div style={{maxWidth:600,textAlign:"center"}}>
-            <div style={{fontSize:64,marginBottom:20}}>🎒</div>
-            <div style={{display:"inline-flex",alignItems:"center",gap:6,background:WHITE,border:`1.5px solid ${BORD}`,borderRadius:999,padding:"6px 16px",fontSize:12,fontWeight:600,color:SKY,marginBottom:20}}>✦ Coming Soon</div>
+            <div style={{fontSize:64,marginBottom:20}}>ðŸŽ’</div>
+            <div style={{display:"inline-flex",alignItems:"center",gap:6,background:WHITE,border:`1.5px solid ${BORD}`,borderRadius:999,padding:"6px 16px",fontSize:12,fontWeight:600,color:SKY,marginBottom:20}}>âœ¦ Coming Soon</div>
             <h1 style={{fontFamily:"Syne,sans-serif",fontSize:40,fontWeight:800,color:TEXT,letterSpacing:"-1px",marginBottom:16}}>INDEX Junior</h1>
             <p style={{fontSize:16,color:MUTED,lineHeight:1.8,marginBottom:12}}>Empowering school students to engage with real-world challenges, guided by university mentors and industry professionals.</p>
             <p style={{fontSize:14,color:MUTED,lineHeight:1.75,marginBottom:32}}>INDEX Junior provides age-appropriate challenges, hands-on guides, mentorship from researchers, and a pathway for young innovators to build real skills before university.</p>
