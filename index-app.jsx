@@ -691,3 +691,5 @@ export default function IndexApp(){
     </>
   );
 }
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<index />);
